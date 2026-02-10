@@ -1,0 +1,97 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-color: #f2f7f4;
+  color: #2e2e2e;
+  padding: 30px;
+}
+
+/* ===== JUDUL ===== */
+h3 {
+  color: #1f8a5b;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+/* ===== PARAGRAF ===== */
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background-color: #ffffff;
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== TABEL ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* ===== BARIS ===== */
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* ===== KOLOM ===== */
+td {
+  padding: 12px;
+  vertical-align: top;
+}
+
+/* ===== KOLOM JUDUL ===== */
+td:nth-child(1) {
+  width: 30%;
+  font-weight: bold;
+  background-color: #e6f4ee;
+}
+
+/* ===== KOLOM TITIK ===== */
+td:nth-child(2) {
+  width: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== KOLOM ISI ===== */
+td:nth-child(3) {
+  width: 65%;
+}
+
+/* ===== HOVER ===== */
+tr:hover {
+  background-color: #f1faf6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  td {
+    font-size: 14px;
+  }
+}
+.Headline {
+    background-color: #56b38b;
+    color: aliceblue;
+    text-align: center;
+    padding: 18px 18px;
+    border-radius: 12px;
+}
