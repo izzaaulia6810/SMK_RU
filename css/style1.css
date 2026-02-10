@@ -1,0 +1,174 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= ROOT COLOR ================= */
+:root {
+    --green-main: #06D001;
+    --green-dark: #0a7a0a;
+    --gold: #d6b25e;
+    --glass: rgba(255,255,255,0.85);
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: "Poppins", sans-serif;
+    background:
+        radial-gradient(circle at top, rgba(6,208,1,0.15), transparent 60%),
+        linear-gradient(180deg, #f5fff5, #eaffea);
+    color: #1c1c1c;
+    padding: 60px 9%;
+}
+
+/* ================= JUDUL UTAMA ================= */
+body > h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 3.2rem;
+    color: var(--green-dark);
+    margin-bottom: 90px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+body > h1::after {
+    content: "✦";
+    display: block;
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin-top: 12px;
+}
+
+/* ================= ANIMASI DASAR ================= */
+@keyframes fadeLuxury {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ================= HEADER JURUSAN ================= */
+.KTB, .KSM, .krpl {
+    position: relative;
+    background:
+        linear-gradient(145deg, var(--green-main), #19ff19);
+    padding: 38px 42px;
+    border-radius: 28px;
+    margin-top: 90px;
+    color: #fff;
+    box-shadow:
+        0 35px 70px rgba(6,208,1,0.45),
+        inset 0 0 0 1px rgba(255,255,255,0.25);
+    overflow: hidden;
+    animation: fadeLuxury 1.3s ease forwards;
+}
+
+/* ORNAMEN CAHAYA ISLAMIC */
+.KTB::before,
+.KSM::before,
+.krpl::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.45), transparent 60%);
+    opacity: 0.7;
+}
+
+/* TEKS HEADER */
+.tb, .tsm, .rpl {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= CARD ISI ================= */
+.intb, .insm, .inrpl {
+    margin-top: 28px;
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    padding: 42px;
+    border-radius: 30px;
+    box-shadow:
+        0 30px 65px rgba(0,0,0,0.12),
+        inset 0 0 0 1px rgba(255,255,255,0.7);
+    border-left: 8px solid var(--green-main);
+    animation: fadeLuxury 1.5s ease forwards;
+}
+
+/* ================= TEKS ================= */
+p {
+    margin-bottom: 16px;
+    font-size: 1.03rem;
+}
+
+strong {
+    color: var(--green-dark);
+}
+
+/* ================= LIST ================= */
+ul {
+    margin-left: 22px;
+    margin-bottom: 28px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* ================= GALERI FOTO EKSKLUSIF ================= */
+.intb img,
+.insm img,
+.inrpl img {
+    width: calc(25% - 14px);
+    height: 200px;
+    object-fit: cover;
+    border-radius: 22px;
+    margin: 8px 7px;
+    box-shadow:
+        0 18px 40px rgba(6,208,1,0.35);
+    transition: 0.6s cubic-bezier(.19,1,.22,1);
+    filter: saturate(1.05);
+}
+
+.intb img:hover,
+.insm img:hover,
+.inrpl img:hover {
+    transform: scale(1.15) rotate(0.6deg);
+    box-shadow:
+        0 30px 70px rgba(6,208,1,0.55);
+    z-index: 5;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    body {
+        padding: 40px 5%;
+    }
+
+    .intb img,
+    .insm img,
+    .inrpl img {
+        width: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 576px) {
+    body > h1 {
+        font-size: 2.4rem;
+    }
+
+    .intb img,
+    .insm img,
+    .inrpl img {
+        width: 100%;
+        height: 230px;
+    }
+}
