@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil SMK Riyadhul Ulum</title>
+    <link rel="stylesheet" href="informasi.css">
+</head>
+<body>
+
+    <header class="header-box">
+        <h1>PROFIL SMK Riyadhul Ulum</h1>
+        <p>Klik kartu untuk melihat detail informasi sekolah</p>
+    </header>
+
+    <main class="container">
+        <div class="card-3d" onclick="toggleCard(this)">
+            <div class="card-content">
+                <h2>1. Identitas</h2>
+                <p class="hint">Klik untuk detail ↓</p>
+                <div class="detail">
+                    <div class="row-identitas">
+                        <div class="col-img-large">
+                            <img src="RUSUN2.png" alt="Foto Utama Sekolah">
+                        </div>
+                        <div class="col-text">
+                            <p><strong>Alamat:</strong> Jl. Setia Budi, Ujung Batu Tim., Kec. Ujung Batu, Kabupaten Rokan Hulu, Riau 28557</p>
+                            <p><strong>Akreditasi:</strong> <span class="badge-akreditasi">A</span> (Sangat Baik)</p>
+                            <p><strong>Kepsek:</strong> Cholid Sujoko</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-3d" onclick="toggleCard(this)">
+            <div class="card-content">
+                <h2>2. Kurikulum</h2>
+                <p class="hint">Klik untuk detail ↓</p>
+                <div class="detail">
+                    <ul>
+                        <li><strong>Kurikulum:</strong> Kurikulum Merdeka</li>
+                        <li><strong>Fokus:</strong> Pengembangan karakter dan keahlian praktis siswa.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-3d" onclick="toggleCard(this)">
+            <div class="card-content">
+                <h2>3. Fasilitas Sekolah</h2>
+                <p class="hint">Klik untuk detail ↓</p>
+                <div class="detail">
+                    <div class="grid-fasilitas">
+                        <div class="foto-item">
+                            <img src="lab.jpg" alt="Lab Komputer">
+                            <span>Lab Komputer</span>
+                        </div>
+                        <div class="foto-item">
+                            <img src="per.jpg" alt="Perpustakaan">
+                            <span>Perpustakaan</span>
+                        </div>
+                        <div class="foto-item">
+                            <img src="lap.jpg" alt="Lapangan">
+                            <span>Lapangan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="informasi.js"></script>
+</body>
+</html>
