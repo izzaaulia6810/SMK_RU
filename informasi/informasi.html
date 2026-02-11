@@ -6,23 +6,10 @@
     <link rel="stylesheet" href="informasi.css" />
 </head>
 <body>
-
-<header class="navbar">
-    <h1>SMK Riyadhul Ulum</h1>
-    <nav>
-        <a href="#profil">Profil</a>
-        <a href="#kepsek">Kepala Sekolah</a>
-        <a href="#jurusan">Jurusan</a>
-        <a href="#fasilitas">Fasilitas</a>
-        <a href="#kontak">Kontak</a>
-    </nav>
-</header>
-
 <section class="hero">
     <div class="hero-text">
         <h2>Membangun Generus Unggul</h2>
         <p>Sekolah modern berbasis agama</p>
-        <button id="btnProfil">Lihat Profil</button>
     </div>
 </section>
 
@@ -43,14 +30,16 @@
     <div class="kepsek-card">
         <img src="kepsek.jpg" alt="Foto Kepala Sekolah" />
         <div class="kepsek-info">
-            <h3>Cholid Sujoko</h3>
+            <h3>Cholid Sujoko, S.Pd.i, M.pd</h3>
             <p>Berpengalaman lebih dari 20 tahun dalam dunia pendidikan dan kepemimpinan sekolah.</p>
         </div>
     </div>
 </section>
 
 <section id="jurusan" class="section cards">
+    <div>
     <h2>Jurusan</h2>
+    </div>
     <div class="card" onclick="openModal('TB','Belajar desain fashion, teknik jahit, dan inovasi gaya untuk siap bersaing di industri busana.')">
         <img src="tb.JPG" alt="Jurusan TB" />
         <h3>Tata Busana</h3>
@@ -69,11 +58,11 @@
     <h2>Fasilitas</h2>
     <div class="card" onclick="openModal('Laboratorium','Lab lengkap dan modern untuk mendukung pembelajaran praktikum sains dan teknologi.')">
         <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Laboratorium" />
-        <h3>Laboratorium</h3>
+        <h3>Perpustakaan</h3>
     </div>
     <div class="card" onclick="openModal('Perpustakaan','Perpustakaan modern untuk meningkatkan literasi dan pengetahuan siswa.')">
         <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Perpustakaan" />
-        <h3>Perpustakaan</h3>
+        <h3>Laboratorium</h3>
     </div>
 </section>
 
@@ -84,19 +73,5 @@
     <p><span class="icon">📍</span> Alamat: Jl. Setia Budi, Ujung Batu Tim., Kec. Ujung Batu, Kabupaten Rokan Hulu, Riau 28557</p>
     <p><span class="icon">🌐</span> Website: www.smk ru.sch.id</p>
 </section>
-
-<div id="modal" class="modal">
-    <div class="modal-box">
-        <button class="modal-close" onclick="closeModal()">×</button>
-        <h2 id="modalTitle"></h2>
-        <p id="modalDesc"></p>
-    </div>
-</div>
-
-<footer class="footer">
-  <p>© 2026 SMK Riyadhul Ulum. All rights reserved.</p>
-</footer>
-
-<script src="informasi.js"></script>
 </body>
 </html>
