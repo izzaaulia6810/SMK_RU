@@ -1,75 +1,102 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil SMK Riyadhul Ulum</title>
-    <link rel="stylesheet" href="informasi.css">
+    <meta charset="UTF-8" />
+    <title>SMK Riyadhul Ulum</title>
+    <link rel="stylesheet" href="informasi.css" />
 </head>
 <body>
 
-    <header class="header-box">
-        <h1>PROFIL SMK Riyadhul Ulum</h1>
-        <p>Klik kartu untuk melihat detail informasi sekolah</p>
-    </header>
+<header class="navbar">
+    <h1>SMK Riyadhul Ulum</h1>
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#kepsek">Kepala Sekolah</a>
+        <a href="#jurusan">Jurusan</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
 
-    <main class="container">
-        <div class="card-3d" onclick="toggleCard(this)">
-            <div class="card-content">
-                <h2>1. Identitas</h2>
-                <p class="hint">Klik untuk detail ↓</p>
-                <div class="detail">
-                    <div class="row-identitas">
-                        <div class="col-img-large">
-                            <img src="RUSUN2.png" alt="Foto Utama Sekolah">
-                        </div>
-                        <div class="col-text">
-                            <p><strong>Alamat:</strong> Jl. Setia Budi, Ujung Batu Tim., Kec. Ujung Batu, Kabupaten Rokan Hulu, Riau 28557</p>
-                            <p><strong>Akreditasi:</strong> <span class="badge-akreditasi">A</span> (Sangat Baik)</p>
-                            <p><strong>Kepsek:</strong> Cholid Sujoko</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="hero">
+    <div class="hero-text">
+        <h2>Membangun Generus Unggul</h2>
+        <p>Sekolah modern berbasis agama</p>
+        <button id="btnProfil">Lihat Profil</button>
+    </div>
+</section>
+
+<section id="profil" class="section special-section">
+    <h2>Profil Sekolah</h2>
+    <p>
+        Nama Sekolah: <strong>SMK Riyadhul Ulum</strong><br />
+        Alamat: Jl. Setia Budi, Ujung Batu Tim., Kec. Ujung Batu, Kabupaten Rokan Hulu, Riau 28557<br />
+        Telepon: (021) 1234 5678<br />
+        Instagram: smk_riyadhul_ulum<br />
+        Website: www.smk ru.sch.id<br />
+        Akreditasi: <strong class="akred">A</strong>
+    </p>
+</section>
+
+<section id="kepsek" class="section">
+    <h2>Kepala Sekolah</h2>
+    <div class="kepsek-card">
+        <img src="kepsek.jpg" alt="Foto Kepala Sekolah" />
+        <div class="kepsek-info">
+            <h3>Cholid Sujoko</h3>
+            <p>Berpengalaman lebih dari 20 tahun dalam dunia pendidikan dan kepemimpinan sekolah.</p>
         </div>
+    </div>
+</section>
 
-        <div class="card-3d" onclick="toggleCard(this)">
-            <div class="card-content">
-                <h2>2. Kurikulum</h2>
-                <p class="hint">Klik untuk detail ↓</p>
-                <div class="detail">
-                    <ul>
-                        <li><strong>Kurikulum:</strong> Kurikulum Merdeka</li>
-                        <li><strong>Fokus:</strong> Pengembangan karakter dan keahlian praktis siswa.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<section id="jurusan" class="section cards">
+    <h2>Jurusan</h2>
+    <div class="card" onclick="openModal('TB','Belajar desain fashion, teknik jahit, dan inovasi gaya untuk siap bersaing di industri busana.')">
+        <img src="tb.JPG" alt="Jurusan TB" />
+        <h3>Tata Busana</h3>
+    </div>
+    <div class="card" onclick="openModal('RPL','Jurusan yang mengasah kemampuan coding, pengembangan aplikasi, dan solusi software kreatif')">
+        <img src="rpl.jpg" alt="Jurusan TB" />
+        <h3>Rekayasa Perangkat Lunak</h3>
+    </div>
+    <div class="card" onclick="openModal('TBSM','Jurusan yang menggabungkan teknik perawatan sepeda motor dengan manajemen bisnis profesional.')">
+        <img src="Ready to electric vehicle.webp" alt="Jurusan TBSM" />
+        <h3>Teknik Bisnis Sepeda Motor</h3>
+    </div>
+</section>
 
-        <div class="card-3d" onclick="toggleCard(this)">
-            <div class="card-content">
-                <h2>3. Fasilitas Sekolah</h2>
-                <p class="hint">Klik untuk detail ↓</p>
-                <div class="detail">
-                    <div class="grid-fasilitas">
-                        <div class="foto-item">
-                            <img src="lab.jpg" alt="Lab Komputer">
-                            <span>Lab Komputer</span>
-                        </div>
-                        <div class="foto-item">
-                            <img src="per.jpg" alt="Perpustakaan">
-                            <span>Perpustakaan</span>
-                        </div>
-                        <div class="foto-item">
-                            <img src="lap.jpg" alt="Lapangan">
-                            <span>Lapangan</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+<section id="fasilitas" class="section cards">
+    <h2>Fasilitas</h2>
+    <div class="card" onclick="openModal('Laboratorium','Lab lengkap dan modern untuk mendukung pembelajaran praktikum sains dan teknologi.')">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Laboratorium" />
+        <h3>Laboratorium</h3>
+    </div>
+    <div class="card" onclick="openModal('Perpustakaan','Perpustakaan modern untuk meningkatkan literasi dan pengetahuan siswa.')">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Perpustakaan" />
+        <h3>Perpustakaan</h3>
+    </div>
+</section>
 
-    <script src="informasi.js"></script>
+<section id="kontak" class="section special-section">
+    <h2>Kontak Kami</h2>
+    <p><span class="icon">📞</span> Telepon: (021) 1234 5678</p>
+    <p><span class="icon">✉️</span> Email: smkppru354@gmail.com</p>
+    <p><span class="icon">📍</span> Alamat: Jl. Setia Budi, Ujung Batu Tim., Kec. Ujung Batu, Kabupaten Rokan Hulu, Riau 28557</p>
+    <p><span class="icon">🌐</span> Website: www.smk ru.sch.id</p>
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 SMK Riyadhul Ulum. All rights reserved.</p>
+</footer>
+
+<script src="informasi.js"></script>
 </body>
 </html>
