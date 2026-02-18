@@ -91,7 +91,7 @@ nav {
   transition: 0.35s;
 }
 
-/* mobile */
+/*  */
 @media (max-width: 768px) {
 
   /* sembunyikan menu desktop */
@@ -209,6 +209,14 @@ nav {
   margin-bottom: 24px;
 }
 
+.special-section h2 {
+  color: #ffffff;
+}
+
+.special-section p {
+  color: #ffffff;
+}
+
 .section h2::after {
   content: "";
   width: 65px;
@@ -226,6 +234,15 @@ nav {
 }
 
 /* VISI MISI */
+.special-section {
+  background:
+  linear-gradient(
+    rgba(11, 93, 58, 0.45),
+    rgba(11, 93, 58, 0.45)
+    ),
+    url(../img/0.jpeg);
+  
+}
 .special-section ul {
   margin: 18px 0;
   padding-left: 18px;
@@ -233,7 +250,7 @@ nav {
 
 .special-section li {
   font-weight: 600;
-  color: #0b5d3a;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 

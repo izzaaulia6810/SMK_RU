@@ -8,7 +8,18 @@
 
 /* body */
 body {
-  background: #f3f7f5;
+  background:
+  linear-gradient(
+    rgba(11, 93, 58, 0.45),
+    rgba(11, 93, 58, 0.45)
+    ),
+    url(../img/rusun.png);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: #1f2937;
   line-height: 1.7;
 }
@@ -128,10 +139,13 @@ body {
 }
 
 .main-title {
-  font-size: 26px;
+  font-size: 35px;
+  font-family: "Playfair Display", serif;
   text-align: center;
-  color: #0b5d3a;
-  margin-bottom: 24px;
+  color: #ebf9e7;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  justify-items: center;
 }
 
 /* judul */
