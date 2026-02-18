@@ -6,27 +6,51 @@
     <link rel="stylesheet" href="informasi.css" />
 </head>
 <body>
+    <nav>
+    <div class="nav-left">
+    <img src="../img/logo.png" alt="logo">
+    <h2 class="jdul">SMK Riyadhul Ulum</h2>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Beranda</a>
+    <a href="../informasi/informasi.html">Informasi</a>
+    <a href="../profil/profil.html">Profil</a>
+    <a href="../program/Kejuruan.html">Program</a>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    </nav>
+
 <section class="hero">
     <div class="hero-text">
         <h2>Membangun Generus Unggul</h2>
         <p>Sekolah modern berbasis agama</p>
     </div>
 </section>
-
+    <!--visi misi-->
 <section id="profil" class="section special-section">
-    <h2>Profil Sekolah</h2>
-    <p>
-        Nama Sekolah: <strong>SMK Riyadhul Ulum</strong><br />
-        Alamat: Jl. Setia Budi, Ujung Batu Tim., Kec. Ujung Batu, Kabupaten Rokan Hulu, Riau 28557<br />
-        Telepon: (021) 1234 5678<br />
-        Instagram: smk_riyadhul_ulum<br />
-        Website: www.smk ru.sch.id<br />
-        Akreditasi: <strong class="akred">A</strong>
-    </p>
+    <h2>Visi & Misi</h2>
+       <ul>
+        <li>Visi</li>
+       </ul>
+        <p>Mewujudkan generasi muda yang memiliki keunggulan intelektual (keahlian teknis) dan kokoh dalam akhlak (religius), serta profesional di bidangnya.</p>
+       <ul>
+        <li>Misi</li>
+       </ul>
+        <p><strong>1. </strong>Menyelenggarakan pendidikan kejuruan yang memadukan ilmu pengetahuan, teknologi, dan nilai-nilai Islam.</p>
+        <p><strong>2. </strong>Mengembangkan kreativitas dan keterampilan praktis siswa, terutama pada bidang Teknik dan Bisnis Sepeda Motor (TBSM).</p>
+        <p><strong>3. </strong>Membentuk lulusan yang beradab, berkarakter kuat, dan mandiri.</p>
+        <p><strong>4. </strong>Menciptakan lulusan yang mampu bersaing dan berinovasi sesuai kebutuhan dunia usaha dan dunia industri (DUDI). </p><br>
+        <p>SMK Riyadhul Ulum juga aktif dalam mendorong inovasi siswa, contohnya dengan perakitan prototipe sepeda motor listrik yang ramah lingkungan. </p>
 </section>
-
+    <!--struktur-->
 <section id="kepsek" class="section">
-    <h2>Kepala Sekolah</h2>
+    <h2 class="kpsek">Kepala Sekolah</h2>
     <div class="kepsek-card">
         <img src="kepsek.jpg" alt="Foto Kepala Sekolah" />
         <div class="kepsek-info">
@@ -34,44 +58,85 @@
             <p>Berpengalaman lebih dari 20 tahun dalam dunia pendidikan dan kepemimpinan sekolah.</p>
         </div>
     </div>
+    <h2>Wakil kepala sekolah</h2>
+    <div class="waka-card">
+        <img src="kepsek.jpg" alt="Foto Kepala Sekolah" />
+        <div class="kepsek-info">
+            <h3>Mukhlis, S.Pd</h3>
+            <p>Berpengalaman lebih dari 8 tahun dalam dunia pendidikan islam.</p>
+        </div>
+    </div>
+</section>
+    <!--akreditas-->
+<section class="section akreditasi">
+    <h2 class="ak">Akreditasi</h2>
+    <h3>A</h3>
 </section>
 
+    <!--jurusan-->
 <section id="jurusan" class="section cards">
     <div>
-    <h2>Jurusan</h2>
+    <h2 class="jrs">Jurusan</h2>
     </div>
-    <div class="card" onclick="openModal('TB','Belajar desain fashion, teknik jahit, dan inovasi gaya untuk siap bersaing di industri busana.')">
+    <div class="card">
         <img src="tb.JPG" alt="Jurusan TB" />
         <h3>Tata Busana</h3>
     </div>
-    <div class="card" onclick="openModal('RPL','Jurusan yang mengasah kemampuan coding, pengembangan aplikasi, dan solusi software kreatif')">
+    <div class="card" >
         <img src="rpl.jpg" alt="Jurusan TB" />
         <h3>Rekayasa Perangkat Lunak</h3>
     </div>
-    <div class="card" onclick="openModal('TBSM','Jurusan yang menggabungkan teknik perawatan sepeda motor dengan manajemen bisnis profesional.')">
+    <div class="card" >
         <img src="Ready to electric vehicle.webp" alt="Jurusan TBSM" />
         <h3>Teknik Bisnis Sepeda Motor</h3>
     </div>
 </section>
-
+    <!--fasilitas-->
 <section id="fasilitas" class="section cards">
     <h2>Fasilitas</h2>
-    <div class="card" onclick="openModal('Laboratorium','Lab lengkap dan modern untuk mendukung pembelajaran praktikum sains dan teknologi.')">
-        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Laboratorium" />
-        <h3>Perpustakaan</h3>
-    </div>
-    <div class="card" onclick="openModal('Perpustakaan','Perpustakaan modern untuk meningkatkan literasi dan pengetahuan siswa.')">
-        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Perpustakaan" />
-        <h3>Laboratorium</h3>
-    </div>
+    <ul>
+        <li>Ruang kelas</li>
+        <li>Ruang praktik</li>
+        <li>Perpustakaan</li>
+        <li>Labolatorium</li>
+        <li>Masjid</li>
+        <li>Lapangan olahraga</li>
+    </ul>
 </section>
+    <!--footer-->
+<footer class="footer">
+    <div class="footer-container">
+    <div>
+      <h3>SMK Riyadhul ulum</h3>
+      <p>Pendidikan Islam yang mengintegrasikan pendidikan agama dan umum dengan keterampilan vokasi untuk membentuk generasi unggul.</p>
+    </div>
 
-<section id="kontak" class="section special-section">
-    <h2>Kontak Kami</h2>
-    <p><span class="icon">📞</span> Telepon: (021) 1234 5678</p>
-    <p><span class="icon">✉️</span> Email: smkppru354@gmail.com</p>
-    <p><span class="icon">📍</span> Alamat: Jl. Setia Budi, Ujung Batu Tim., Kec. Ujung Batu, Kabupaten Rokan Hulu, Riau 28557</p>
-    <p><span class="icon">🌐</span> Website: www.smk ru.sch.id</p>
-</section>
+    <div>
+      <h3>Kontak</h3>
+      <p>📍 Ujungbatu, Riau</p>
+      <p>📞 Admin SMK: 0812-3289-0475</p>
+    </div>
+
+    <div>
+      <h3>Sosial Media</h3>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/smk_riyadhul_ulum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SMK Riyadhul Ulum • ADM
+  </div>
+</footer>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>

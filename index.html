@@ -1,26 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMK RIYADHUL ULUM</title>
-    <link rel="stylesheet" href="css/style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK RIYADHUL ULUM</title>
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-    <!--navbar-->
-    <nav>
-    <img src="img/logo.png" alt="logo">
-    <h2>SMK Riyadhul ulum</h2>
+<!--navbar-->
+  <nav class="navbar">
+  <div class="nav-left">
+    <img src="img/logo.png" alt="Logo">
+    <h2>SMK Riyadhul Ulum</h2>
+  </div>
+
+  <div class="nav-links" id="navLinks">
     <a href="index.html">Beranda</a>
     <a href="informasi/informasi.html">Informasi</a>
     <a href="profil/profil.html">Profil</a>
     <a href="program/Kejuruan.html">Program</a>
-    </nav>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
     <!--header-->
     <header id="Beranda">
-        <h1>SMK Riyadhul Ulum</h1>
-        <h2>Ujung batu</h2>
-        <p>Selamat datang di halaman SMK riyadhul ulum</p>
+      <h1>SMK Riyadhul Ulum</h1>
+      <h2>Ujung batu</h2>
+      <p>Selamat datang di halaman SMK riyadhul ulum</p>
+      <P>Sekolah unggulan berbasis 29 karakter, teknologi, dan prestasi. <br>
+      SMK RU adalah lembaga pendidikan kejuruan yang berkomitmen
+      mengembangkan potensi peserta didik melalui pendidikan
+      berbasis karakter, teknologi, dan nilai-nilai keislaman.</P>
     </header>
+   <footer class="footer">
+    <div class="footer-container">
+    <div>
+      <h3>SMK Riyadhul ulum</h3>
+      <p>Pendidikan Islam yang mengintegrasikan pendidikan agama dan umum dengan keterampilan vokasi untuk membentuk generasi unggul.</p>
+    </div>
+
+    <div>
+      <h3>Kontak</h3>
+      <p>📍 Ujungbatu, Riau</p>
+      <p>📞  Admin SMK: 0812-3289-0475</p>
+    </div>
+
+    <div>
+      <h3>Sosial Media</h3>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/smk_riyadhul_ulum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+  © 2026 SMK Riyadhul Ulum • ADM
+  </div>
+</footer>
+<link rel="stylesheet" href="../css/navbar.css">
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+navLinks.classList.toggle("active");
+});
+</script>
 </body>
 </html>

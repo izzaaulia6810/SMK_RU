@@ -1,94 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profil_smk riyadhul ulum</title>
-    <link rel="stylesheet" href="stayle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil | SMK Riyadhul Ulum</title>
+  <link rel="stylesheet" href="stayle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h3>Identitas Sekolah</h3>
-    <header class="Headline">
-  <p>SMK Riyadhul Ulum Ujung Batuadalahsekolah menengah kejuruan swasta berbasis pesantren (Pondok Pesantren Riyadhul Ulum) yang berlokasi di Jl. Setia Budi, Ujung Batu Timur, Rokan Hulu, Riau. Didirikan pada tahun 2014, sekolah ini memadukan kurikulum pendidikan formal kejuruan dengan pendidikan agama Islam untuk mencetak generasi yang mandiri, berakhlakul karimah, dan profesional.</p>
-  </header>
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="../img/logo.png" alt="Logo SMK">
+    <h2>SMK Riyadhul Ulum</h2>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Beranda</a>
+    <a href="../informasi/informasi.html">Informasi</a>
+    <a href="../profil/profil.html">Profil</a>
+    <a href="../program/Kejuruan.html">Program</a>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+<main class="content">
+ <h1 class="main-title">Identitas Sekolah</h1>
+ <section class="headline">
+    <p>
+      SMK Riyadhul Ulum Ujung Batu adalah sekolah menengah kejuruan swasta
+      berbasis pesantren (Pondok Pesantren Riyadhul Ulum) yang memadukan
+      pendidikan kejuruan, teknologi, dan nilai-nilai keislaman.
+    </p>
+  </section>
+
+  <section class="table-wrap">
   <table>
-    <tr>
+    <div>
+      <tr>
         <td>Nama Sekolah</td>
         <td>:</td>
         <td>SMK riyadhul ulum </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>NPSN</td>
         <td>:</td>
         <td>69974256</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Status Sekolah</td>
         <td>:</td>
         <td>SWASTA</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Bentuk Pendidikan</td>
         <td>:</td>
         <td>SMK</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Alamat</td>
         <td>:</td>
         <td>Jl. Setia Budi Ujung</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>RT</td>
         <td>:</td>
         <td>021</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>RW</td>
         <td>:</td>
         <td>008</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Nama Dusun</td>
         <td>:</td>
         <td>sei sepoteh</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Desa/Kelurahan</td>
         <td>:</td>
         <td>ujung batu timur</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Kode Pos</td>
         <td>:</td>
         <td>28554</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Kecamatan</td>
         <td>:</td>
         <td>Kec. ujung batu </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Kabupaten/Kota</td>
         <td>:</td>
         <td>rokan huluu</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Provinsi</td>
         <td>:</td>
         <td>Riau</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Nomor Telepon</td>
         <td>:</td>
         <td>0853-7456-1881</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Email</td>
         <td>:</td>
         <td>smkru354@gmail.com</td>
-    </tr>
-   </div>
- </table>
+      </tr>
+    </div>
+  </table>
+</main>
+<footer class="footer">
+  <div class="footer-container">
 
+    <div>
+      <h3>SMK Riyadhul Ulum</h3>
+      <p>Pendidikan Islam yang mengintegrasikan pendidikan agama dan umum dengan keterampilan vokasi untuk membentuk generasi unggul.</p>
+    </div>
+
+    <div>
+      <h3>Kontak</h3>
+      <p>📍 Ujung Batu, Riau</p>
+      <p>📞 0812-3289-0475</p>
+    </div>
+
+    <div>
+      <h3>Sosial Media</h3>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/smk_riyadhul_ulum" target="_blank">
+          Instagram
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+  © 2026 SMK Riyadhul Ulum • ADM
+  </div>
+</footer>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
